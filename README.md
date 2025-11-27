@@ -116,7 +116,7 @@ Kafka consumer batches events.
 Writes them to MinIO in JSON format, partitioned by date/hour.
 - MinIO → Snowflake (Bronze)
 Airflow DAG extracts events and loads raw data into Snowflake.
-Transformation (Silver & Gold)
+- Transformation (Silver & Gold)
 dbt cleans, deduplicates, and enriches Bronze data into Silver tables.
 Aggregates data for Gold layer (top songs, engagement metrics, trends).
 
